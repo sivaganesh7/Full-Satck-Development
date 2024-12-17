@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Links</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    color: #333;
+}
+.container {
+    margin: 30px auto;
+    width: 100%;
+    max-width: 600px;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+
+.profile {
+    text-align: center;
+    
+}
+p{
+    margin-top: 7px;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #007BFF;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+.profile a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.profile a:hover {
+    text-decoration: underline;
+    transform: scale(1.8);
+
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Profile Links</h1>
+        <div class="profiles">
+       
+            <div class="profile">
+                <a href="https://www.google.co.in/">
+                    <img src="frnd1.jpeg" alt="Your Profile" class="profile-image">
+                </a>
+                <p><a href="https://www.google.co.in/">Your Profile</a></p>
+            </div>
+            
+            <div class="profile">
+                <a href="https://www.bing.com/">
+                    <img src="frnd2.jpeg" alt="Friend's Profile" class="profile-image">
+                </a>
+                <p><a href="https://www.bing.com/">Friend's Profile</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
