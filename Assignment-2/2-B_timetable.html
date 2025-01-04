@@ -3,53 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tables</title>
+    <title>TimeTable</title>
     <style>
         table,th,td{
-            border: 1px solid black;
+            border: 2px solid black;
             border-collapse: collapse;
-            padding:10px 50px;
             text-align: center;
+            padding: 10px 20px;
+            margin: auto;
+        }
+        h2{
+            text-align: center;
+        }
+        h1{
+            margin: 30px 310px;
         }
     </style>
 </head>
 <body>
-    <h1>HTML Tables Demonstration</h1>
-    <h2>Basic Table</h2>
+    <h1>HTML Timetable Example</h1>
+    <h2>Class Timetable</h2>
     <table>
         <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-        <tr>
-            <td>Row 1, cell 1</td>
-            <td>Row 1, cell 2</td>
-            <td>Row 1, cell 3</td>
+            <th>Day/Time</th>
+            <th>9:00 AM - 10:00 AM</th>
+            <th>10:00 AM - 11:00 AM</th>
+            <th>11:00 AM - 12:00 PM</th>
+            <th>12:00 PM - 1:00 PM</th>
+            <th>1:00 PM - 2:00 PM</th>
+            <th>2:00 PM - 3:00 PM</th>
         </tr>
         <tr>
-            <td>Row 2, cell 1</td>
-            <td>Row 2, cell 2</td>
-            <td>Row 2, cell 3</td>
-        </tr>
-    </table>
-    <h2>Table with Rowspan and Colspan</h2>
-    <table>
-        <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-            <th>Header 3</th>
-        <tr>
-            <td rowspan="2">Row 1 and 2, cell 1</td>
-            <td>Row 1, cell 2</td>
-            <td>Row 1, cell 3</td>
+            <td><b>Monday</b></td>
+            <td>P&S</td>
+            <td rowspan="2">Physics</td>
+            <td>SE</td>
+            <td rowspan="3" colspan="2">Lunch Break</td>
+            <td>ADSAA</td>
         </tr>
         <tr>
-            <td colspan="2">Row 2, Merged cells</td>
+            <td><b>Tuesday</b></td>
+            <td>DT</td>
+            <td>MEFA</td>
+            <td>Computer Science</td>
         </tr>
         <tr>
-            <td>Row 3, cell 1</td>
-            <td>Row 3, cell 2</td>
-            <td>Row 3, cell 3</td>
+            <td><b>Wednesday</b></td>
+            <td colspan="2">FSD Lab</td>
+            <td>SE</td>
+            <td>DT</td>
+        </tr>
+        <tr>
+            <td><b>Thurday</b></td>
+            <td>OS</td>
+            <td>CRT</td>
+            <td rowspan="2">SE</td>
+            <td>FSD</td>
+            <td>MEFA</td>
+            <td>DT</td>
+        </tr>
+        <tr>
+            <td><b>Friday</b></td>
+            <td>Computer Science</td>
+            <td>OS Lab</td>
+            <td>ADSAA</td>
+            <td>CRT</td>
         </tr>
     </table>
 </body>
