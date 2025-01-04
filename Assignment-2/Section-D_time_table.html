@@ -6,6 +6,7 @@
     <title>Timetable</title>
     <style>
     h2{
+        margin-top: 50px;
         text-align: center;
     }
     caption{
@@ -13,26 +14,19 @@
     }
     table{
         margin:auto;
-        border: 2px solid;
         align-items: center;
         text-align: center;
-        
-    }
-    .timetab{
-        margin-top: auto;
-        
-      
     }
     .faculty{
         border: none;
+      
     }
     </style>
 </head>
 <body>
   <div class="timetab">
     <h2>Weekly Timetable</h2>
-
-    <table cellspacing="2" cellpadding="10" border="2">
+    <table cellspacing="0" cellpadding="10" border="1">
         <caption >SECTION-D </caption>
        <tr>
         <th>Period</th>
@@ -46,8 +40,8 @@
         <td>7</td>
         <td>8</td>
        </tr>
-       <tr>
-        <th>Day</th>
+       <tr style="color:blue";>
+        <th style="color:black;">Day</th>
         <th>9:30-9:50AM</th>
         <th>9:50-10:40AM</th>
         <th>11:00-11:50AM</th>
@@ -104,7 +98,7 @@
         <td>OS</td>
         <td>P&S</td>
         <td>ADSAA</td>
-        <td>S3</td>
+        <td>SE</td>
         <td>CRT</td>
        </tr>
        <tr>
@@ -119,7 +113,7 @@
     </table>
   </div>
   <h2>Faculty Details</h2>
-        <table class="faculty">
+        <table class="faculty" cellspacing="1" cellpadding="6" >
             <caption>Subject-Faculty Mapping</caption>
             <tr>
                 <th>Subject</th>
@@ -130,11 +124,11 @@
                 <td>Dr. K. Pavan</td>
             </tr>
             <tr>
-                <br><td>P&S (Probability & Statistics)</td>
+                <td>P&S (Probability & Statistics)</td>
                 <td>Mrs. K.G.R. Deepthi</td>
             </tr>
             <tr>
-                <br><td>OS (Operating Systems)</td>
+                <td>OS (Operating Systems)</td>
                 <td>Mr. M.V. Durga Rao</td>
             </tr>
             <tr>
