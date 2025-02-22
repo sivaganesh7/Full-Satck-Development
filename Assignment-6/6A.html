@@ -38,7 +38,15 @@
     <!-- Internal JavaScript -->
     <script>
         function changeTextInternal() {
-            document.getElementById("internal-demo").innerHTML = "This text is updated using internal JavaScript!";
+            var e=document.getElementById("internal-demo");
+            e.innerHTML = "This text is updated using internal JavaScript!";
+            e.style.color="green";
+        }
+        function changeTextExternal() {
+          var e=document.getElementById("external-demo");
+          e.innerHTML = "This text is updated using external JavaScript!";
+          e.style.color="red";
+        
         }
     </script>
 </body>
