@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,6 +26,11 @@
         .btn{
             text-align: center;
         }
+        p{
+            border: solid;
+            text-align: center;
+            padding:10px;
+        }
     </style>
 </head>
 <body>
@@ -38,7 +43,7 @@
     <button onclick="con()">Log TO Console</button>
     <button onclick="inner()">Update Inner HTML</button>
     </div>
-    <p id="p"></p>
+    <p id="p">Output Will Appear Here</p>
 </body>
   <sript>
     function alertmet(){
@@ -52,10 +57,8 @@
       }  
     function inner(){
         var e=document.getElementById("p")
-        e.innerHTML="Output will appear here";
-        e.style.border="black solid";
-        e.style.padding="10px";
-        e.style.textAlign="center";
+        e.innerHTML="The Text Is Using InnerHTML";
+
     }
   </sript>
 </html>
