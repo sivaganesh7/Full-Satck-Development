@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Number Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input{
+            padding: 10px;
+            border: rgb(141, 100, 100) solid;
+            border-radius: 30px;
+        }
+        button{
+            padding: 11px;
+            border-radius: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Palindrome Number Checker</h2>
+        <input type="number" id="numberInput" placeholder="Enter a number">
+        <button onclick="checkPalindrome()">Check</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function checkPalindrome() {
+            let number = document.getElementById("numberInput").value;
+            if (number === "") {
+                document.getElementById("result").innerHTML = "Please enter a number!";
+                return;
+            }
+            let numStr = number.toString();
+            let reversedStr = numStr.split('').reverse().join('');
+            if (numStr === reversedStr) {
+                document.getElementById("result").innerHTML = 
+                    `${number} is a palindrome number!`;
+            } else {
+                document.getElementById("result").innerHTML = 
+                    `${number} is not a palindrome number.`;
+            }
+            document.getElementById("numberInput").value = "";
+        }
+    </script>
+</body>
+</html>
