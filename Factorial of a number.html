@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial of a Number</title>
+    <style>
+        button{
+            padding: 10px;
+            background-color: aqua;
+            border-radius: 50px;
+            margin: 30px;
+        }
+        div{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <button onclick="input()">Enter A Number</button>
+    <button onclick="checkfact()">Check Factorial of Number</button>
+    <p id="dis"></p>
+    </div>
+</body>
+<script>
+    let n;
+    function input() {
+        n = parseInt(prompt("Enter a number"));
+        if (isNaN(n) || n < 0) {
+            alert("Please enter a non-negative number");
+            n = undefined;
+        }
+    }
+    
+    function checkfact() {
+        if (n === undefined || n === null) {
+            document.getElementById("dis").innerHTML = "Please enter a number first";
+            return;
+        }
+        
+        let f = 1;
+        for (let i = n; i > 0; i--) {
+            f = f * i;
+        }
+        document.getElementById("dis").innerHTML = `Factorial of ${n} is: ${f}`;
+    }
+</script>
+</html>
