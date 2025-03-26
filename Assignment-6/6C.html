@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Input Methods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #output-area {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Input Methods</h1>
+    
+    <button onclick="getInputPrompt()">Prompt Input</button>
+    <button onclick="getInputFromForm()">Form Input</button>
+    <button onclick="getInputConfirm()">Confirm Input</button>
+    
+    <div id="output-area">User input will appear here.</div>
+    
+    <label for="userInput">Enter something:</label>
+    <input type="text" id="userInput">
+    <button onclick="getInputTextbox()">Get Textbox Input</button>
+
+    <script>
+        // Method 1: Prompt Input
+        function getInputPrompt() {
+            let userInput = prompt("Please enter some text:");
+            document.getElementById("output-area").innerHTML = "You entered: " + userInput;
+        }
+
+        // Method 2: Form Input
+        function getInputFromForm() {
+            let userInput = document.getElementById("userInput").value;
+            document.getElementById("output-area").innerHTML = "You entered: " + userInput;
+        }
+
+        // Method 3: Confirm Box Input
+        function getInputConfirm() {
+            let userResponse = confirm("Do you like JavaScript?");
+            document.getElementById("output-area").innerHTML = "Your response: " + (userResponse ? "Yes" : "No");
+        }
+
+        // Method 4: Textbox Input
+        function getInputTextbox() {
+            let userInput = document.getElementById("userInput").value;
+            document.getElementById("output-area").innerHTML = "You entered: " + userInput;
+        }
+    </script>
+</body>
+</html>
